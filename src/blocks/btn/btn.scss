@@ -1,0 +1,57 @@
+//// В этом файле должны быть стили для БЭМ-блока btn, его элементов,
+//// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+
+.btn {
+
+ $block-name:                &; // #{$block-name}__element
+
+ &:hover,
+ &:focus {
+
+ }
+
+ &:visited {
+ 
+ }
+
+ &:active,
+ &:focus {
+ 
+ }
+
+ &--disabled,
+ &:disabled {
+
+
+   @at-root a.btn--disabled {
+ 
+   }
+ }
+
+ // &__icon {
+ //   display: inline-block;
+ //   vertical-align: middle;
+ // }
+
+
+
+ // &--main {
+ //   color: #fff;
+ //   background-color: $color-main;
+ //   border: 1px solid $color-main;
+
+ //   &:hover,
+ //   &:focus {
+ //     color: #fff;
+ //     background-color: darken($color-main, 10%);
+ //     border-color: darken($color-main, 12%);
+ //   }
+
+ //   &--disabled,
+ //   &:disabled {
+ //     color: #fff;
+ //     background-color: $color-main;
+ //     border-color: $color-main;
+ //   }
+ // }
+}
